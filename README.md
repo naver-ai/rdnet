@@ -1,18 +1,23 @@
-## DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs
+<div align="center">
+<h2><a href="https://arxiv.org/abs/2403.19588">DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs</a></h2>
+
+[Donghyun Kim](https://scholar.google.co.kr/citations?hl=en&user=EBC8BMAAAAAJ)<sup>1*</sup>, [Byeongho Heo](https://sites.google.com/view/byeongho-heo/home)<sup>2</sup>, [Dongyoon Han](https://dongyoonhan.github.io/)<sup>2*</sup>
+
+<sup>1</sup><a href="https://www.ncloud.com/">NAVER Cloud AI</a>, <sup>2</sup><a href="https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab">NAVER AI Lab</a>
+</div>
+
+<p align="center">
+<a href="https://arxiv.org/abs/2403.19588" alt="arXiv">
+    <img src="https://img.shields.io/badge/arXiv-2403.19588-4C35F5.svg?style=flat" /></a>
+<a href="https://github.com/naver-ai/rdnet/blob/main/LICENSE" alt="license">
+    <img src="https://img.shields.io/badge/license-Apache--2.0-%23B7A800" /></a>
+<a href="https://huggingface.co/naver-ai" alt="Huggingface">
+    <img src="https://img.shields.io/badge/huggingface-NAVERAILab-F58336" /></a>
+</p>
 
 <p align="center">
   <img src="./resources/images/rdnet_reloaded.gif" alt="Densenet Reloaded">
 </p>
-
-<p align="center">
-    <a href="https://scholar.google.co.kr/citations?hl=en&user=EBC8BMAAAAAJ">Donghyun Kim</a><sup>1*</sup>, <a href="https://sites.google.com/view/byeongho-heo/home">Byeongho Heo</a><sup>2</sup>, <a href="https://dongyoonhan.github.io/">Dongyoon Han</a><sup>2*</sup> <br>
-    (*equal contribution) <br>
-    <sup>1</sup><a href="https://www.ncloud.com/">NAVER Cloud AI</a>, <sup>2</sup><a href="https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab">NAVER AI Lab</a> <br>
-</p>
-
-This repository is the official PyTorch implementation of 
-
-*DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs* | [arXiv](https://arxiv.org/abs/2403.19588)
 
 We breathe new life into **Densely Connected Convolutional Networks (DenseNets)** and unveil their untapped potential, challenging the prevalent dominance of ResNet-style architectures. Our research indicates that DenseNets were previously underestimated, primarily due to conventional design choices and training methods that failed to exploit their full capabilities.
 
@@ -28,9 +33,9 @@ We breathe new life into **Densely Connected Convolutional Networks (DenseNets)*
 *<p align="center">Tradeoff with RDNet (ours) and mainstream models</p>*
 
 ### Key Highlights:
-- Pilot study (*§5.1*) reveals concatenations's effectiness.
-- We have meticulously upgraded various aspects of DenseNets (*§3.2*), from architectural tweaks and block redesigns.
-- Our revamped DenseNets (*RDNets*) outperform mainstream architectures such as Swin Transformer, ConvNeXt, and DeiT-III (*§4.1*).
+- Pilot study (**§5.1**) reveals *concatenations' effectiness*.
+- We have meticulously *upgraded various aspects of DenseNets* (**§3.2**), from architectural tweaks and block redesigns.
+- Our revamped DenseNets (**RDNets**) *outperform mainstream architectures* such as Swin Transformer, ConvNeXt, and DeiT-III (**§4.1**).
 
 Our work aims to reignite interest in DenseNets by demonstrating their renewed relevance and superiority in the current architectural landscape. We encourage the community to explore and build upon our findings, paving the way for further innovative contributions in deep learning architectures.
 
@@ -39,7 +44,7 @@ Our work aims to reignite interest in DenseNets by demonstrating their renewed r
 
 ## Updates
 - **(2024.04.19)**: Initial release of the repository.
-- **(2024.03.28)**: Paper is available on arXiv.
+- **(2024.03.28)**: Paper is available on [arXiv](https://arxiv.org/abs/2403.19588).
 
 
 ## RDNet for Image Classification
