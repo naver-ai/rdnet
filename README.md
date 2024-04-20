@@ -46,6 +46,13 @@ Our work aims to reignite interest in DenseNets by demonstrating their renewed r
 - **(2024.04.19)**: Initial release of the repository.
 - **(2024.03.28)**: Paper is available on [arXiv](https://arxiv.org/abs/2403.19588).
 
+## Coming Soon
+- [ ] More ImageNet-22k Pretrained Models.
+- [ ] More ImageNet-1k fine-tuned models.
+- [ ] Cascade Mask R-CNN with RDNet.
+- [ ] DETR with RDNet.
+- [ ] Self-Supervised Learning with RDNet.
+- [ ] Transfer Learning with RDNet (with cifar10, cifar100, stanford cars, ...).
 
 ## RDNet for Image Classification
 For details on object detection and instance segmentation, please refer to [detection/README.md](detection/README.md).
