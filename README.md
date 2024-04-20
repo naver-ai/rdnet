@@ -49,7 +49,7 @@ Our work aims to reignite interest in DenseNets by demonstrating their renewed r
 ## Coming Soon
 - [ ] More ImageNet-22k Pretrained Models.
 - [ ] More ImageNet-1k fine-tuned models.
-- [ ] Cascade Mask R-CNN with RDNet.
+- [x] Cascade Mask R-CNN with RDNet.
 - [ ] DETR with RDNet.
 - [ ] Self-Supervised Learning with RDNet.
 - [ ] Transfer Learning with RDNet (with cifar10, cifar100, stanford cars, ...).

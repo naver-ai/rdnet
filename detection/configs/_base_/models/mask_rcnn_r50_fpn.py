@@ -1,5 +1,5 @@
-# model settings
 # copied from https://github.com/open-mmlab/mmdetection/blob/v2.25.3/configs/_base_/models/mask_rcnn_r50_fpn.py
+# model settings
 model = dict(
     type='MaskRCNN',
     backbone=dict(

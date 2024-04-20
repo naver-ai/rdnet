@@ -11,10 +11,21 @@
 - mmsegmentation 0.22.1
 
 ### Pretrained Models & logs
-TBA
+
+Pretrained Models & logs (HFHub): https://huggingface.co/naver-clova-ocr/rdnet_upernet_ade20k_160k/tree/main
+
+|       Model       | Backbone | Params | FLOPs | AP(box) | AP50(box) | AP75(box) | AP(mask) | AP50(mask) | AP75(mask) |                                                                                                                url                                                                                                                 |
+|:-----------------:|:--------:|:------:|:-----:|:-------:|:---------:|:---------:|:--------:|:----------:|:----------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|     Mask RCNN     | RDNet-T  |  81M   | 757G  |  47.5   |   68.5    |   52.1    |   42.4   |    65.6    |    45.7    |          [ckpt](https://huggingface.co/naver-ai/rdnet_mask_rcnn_coco_3x/blob/main/rdnet_tiny/epoch_36.pth), [train_log](https://huggingface.co/naver-ai/rdnet_mask_rcnn_coco_3x/blob/main/rdnet_tiny/20240308_095003.log)          |
+| Cascade Mask RCNN | RDNet-T  |  81M   | 757G  |  51.6   |   70.5    |   56.0    |   44.6   |    67.9    |    48.3    |  [ckpt](https://huggingface.co/naver-ai/rdnet_cascade_mask_rcnn_coco_3x/blob/main/rdnet_tiny/epoch_36.pth), [train_log](https://huggingface.co/naver-ai/rdnet_cascade_mask_rcnn_coco_3x/blob/main/rdnet_tiny/20240309_072408.log)  |
+| Cascade Mask RCNN | RDNet-S  |  50M   | 832G  |  52.3   |   70.8    |   56.6    |   45.4   |    68.5    |    49.3    | [ckpt](https://huggingface.co/naver-ai/rdnet_cascade_mask_rcnn_coco_3x/blob/main/rdnet_small/epoch_36.pth), [train_log](https://huggingface.co/naver-ai/rdnet_cascade_mask_rcnn_coco_3x/blob/main/rdnet_small/20240309_082553.log) |
+| Cascade Mask RCNN | RDNet-B  |  87M   | 971G  |  52.9   |   71.5    |   57.2    |   46.0   |    69.1    |    50.0    |  [ckpt](https://huggingface.co/naver-ai/rdnet_cascade_mask_rcnn_coco_3x/blob/main/rdnet_base/epoch_36.pth), [train_log](https://huggingface.co/naver-ai/rdnet_cascade_mask_rcnn_coco_3x/blob/main/rdnet_base/20240401_014441.log)  |
 
 
 ### Train
 ```
-torchrun --nproc_per_node=4 train.py configs/rdnet/rdnet_tiny.py --launcher pytorch
+torchrun --nproc_per_node=4 train.py configs/rdnet/mask_rcnn_rdnet_tiny_3x.py --launcher pytorch
+torchrun --nproc_per_node=4 train.py configs/rdnet/cascade_mask_rcnn_rdnet_tiny_3x.py --launcher pytorch
+torchrun --nproc_per_node=4 train.py configs/rdnet/cascade_mask_rcnn_rdnet_small_3x.py --launcher pytorch
+torchrun --nproc_per_node=4 train.py configs/rdnet/cascade_mask_rcnn_rdnet_base_3x.py --launcher pytorch
 ```
