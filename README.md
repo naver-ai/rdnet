@@ -64,11 +64,11 @@ For details on semantic segmentation, please refer to [segmentation/README.md](s
 We provide the pretrained models for RDNet. You can download the pretrained models from the links below.
 
 #### ImageNet-1K (pre-)trained models
-|  Model  | IMG Size | Params | FLOPs | Top-1 | Model Card                                                       |                             url                              |
-|:-------:|:--------:|:------:|:-----:|:-----:|------------------------------------------------------------------|:------------------------------------------------------------:|
-| RDNet-T |   224    |  22M   | 4.0G  | 82.8  | [model_card](./resources/hfhub_model_cards/rdnet_tiny.nv_in1k.md)  | [HFHub](https://huggingface.co/naver-ai/rdnet_tiny.nv_in1k)  |
-| RDNet-S |   224    |  50M   | 8.8G  | 83.7  | [model_card](./resources/hfhub_model_cards/rdnet_small.nv_in1k.md) | [HFHub](https://huggingface.co/naver-ai/rdnet_small.nv_in1k) |
-| RDNet-B |   224    |  87M   | 15.6G | 84.4  | [model_card](./resources/hfhub_model_cards/rdnet_base.nv_in1k.md)  | [HFHub](https://huggingface.co/naver-ai/rdnet_base.nv_in1k)  |
+|  Model  | IMG Size | Params | FLOPs | Top-1 | Model Card                                                         |                             url                              |
+|:-------:|:--------:|:------:|:-----:|:-----:|--------------------------------------------------------------------|:------------------------------------------------------------:|
+| RDNet-T |   224    |  22M   | 5.0G  | 82.8  | [model_card](./resources/hfhub_model_cards/rdnet_tiny.nv_in1k.md)  | [HFHub](https://huggingface.co/naver-ai/rdnet_tiny.nv_in1k)  |
+| RDNet-S |   224    |  50M   | 8.7G  | 83.7  | [model_card](./resources/hfhub_model_cards/rdnet_small.nv_in1k.md) | [HFHub](https://huggingface.co/naver-ai/rdnet_small.nv_in1k) |
+| RDNet-B |   224    |  87M   | 15.4G | 84.4  | [model_card](./resources/hfhub_model_cards/rdnet_base.nv_in1k.md)  | [HFHub](https://huggingface.co/naver-ai/rdnet_base.nv_in1k)  |
 | RDNet-L |   224    |  186M  | 34.7G | 84.8  | [model_card](./resources/hfhub_model_cards/rdnet_large.nv_in1k.md) | [HFHub](https://huggingface.co/naver-ai/rdnet_large.nv_in1k) |
 
 #### ImageNet-1K fine-tuned models
