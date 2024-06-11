@@ -19,7 +19,7 @@
   <img src="./resources/images/rdnet_reloaded.gif" alt="Densenet Reloaded">
 </p>
 
-We breathe new life into **Densely Connected Convolutional Networks (DenseNets)** and unveil their untapped potential, challenging the prevalent dominance of ResNet-style architectures. Our research indicates that DenseNets were previously underestimated, primarily due to conventional design choices and training methods that failed to exploit their full capabilities.
+We revitalize **Densely Connected Convolutional Networks (DenseNets)** and reveal their untapped potential to challenge the prevalent dominance of ResNet-style architectures. Our research indicates that DenseNets were previously underestimated, primarily due to conventional design choices and training methods that underexploited their full capabilities.
 
 
 <br>
@@ -33,13 +33,13 @@ We breathe new life into **Densely Connected Convolutional Networks (DenseNets)*
 *<p align="center">Tradeoff with RDNet (ours) and mainstream models</p>*
 
 ### Key Highlights:
-- Pilot study (**§5.1**) reveals *concatenations' effectiness*.
-- We have meticulously *upgraded various aspects of DenseNets* (**§3.2**), from architectural tweaks and block redesigns.
-- Our revamped DenseNets (**RDNets**) *outperform mainstream architectures* such as Swin Transformer, ConvNeXt, and DeiT-III (**§4.1**).
+- Pilot study (**§5.1**) reveals *concatenations' effectiveness*.
+- We have meticulously *upgraded various aspects of DenseNets* (**§3.2**) through architectural tweaks and block redesigns.
+- Our revitalized DenseNets (**RDNets**) *outperform mainstream architectures* such as Swin Transformer, ConvNeXt, and DeiT-III (**§4.1**).
 
 Our work aims to reignite interest in DenseNets by demonstrating their renewed relevance and superiority in the current architectural landscape. We encourage the community to explore and build upon our findings, paving the way for further innovative contributions in deep learning architectures.
 
-*We believe that various architectural designs that are popular recently can be combined with Densenets successfully.*
+*We believe that various architectural designs that have been popular recently would be combined with dense connections successfully.*
 
 
 ## Updates
