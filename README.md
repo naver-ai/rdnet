@@ -1,3 +1,5 @@
+<h3> <p align="center"> 🎉🎉 Our paper has been accepted at ECCV 2024! Stay tuned for more updates here !! 🎉🎉</h3>
+
 <div align="center">
 <h2><a href="https://arxiv.org/abs/2403.19588">DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs</a></h2>
 
@@ -15,6 +17,8 @@
     <img src="https://img.shields.io/badge/huggingface-NAVERAILab-F58336" /></a>
 </p>
 
+</p>
+    
 <p align="center">
   <img src="./resources/images/rdnet_reloaded.gif" alt="Densenet Reloaded">
 </p>
