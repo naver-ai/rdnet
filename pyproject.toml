@@ -25,6 +25,4 @@ dependencies = [
 version = "0.1.0"
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["rdnet.py", "__init__.py"]
-namespaces = false
+include = ["rdnet", "rdnet.*"]

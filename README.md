@@ -48,9 +48,10 @@ Our work aims to reignite interest in DenseNets by demonstrating their renewed r
 Install rdnet package with `pip install rdnet` !
 
 ```python
-from rdnet import RDNet
+import timm
+import rdnet  # this will register the RDNet models to timm
 
-model = RDNet('rdnet_large', pretrained=True)
+model = timm.create_model('rdnet_large', pretrained=True)
 ```
 
 For detailed usage, please refer to the [huggingface model card](https://huggingface.co/naver-ai/rdnet_tiny.nv_in1k).
