@@ -16,17 +16,13 @@ requires-python = ">=3.8"
 keywords = ["backbone", "classification", "densenet", "convolutional-neural-networks", "revisit", "dense-connections", "rdnet"]
 license = {file = "LICENSE"}
 classifiers = [
-    "Framework :: PyTorch",
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
     "torch>=1.9.1",
     "timm~=0.9"
 ]
-
-dynamic = ["version"]
-[tool.setuptools.dynamic]
-version = {attr = "__version__"}
+version = "0.1.0"
 
 [tool.setuptools.packages.find]
 where = ["."]
