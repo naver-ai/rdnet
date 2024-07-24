@@ -18,8 +18,8 @@
 </p>
     
 <p align="center">
-  <img src="./resources/images/rdnet_reloaded.gif" alt="Densenet Reloaded">
-  <img src="./resources/images/densenet_becomes_rdnet.gif" alt="Densenet becomes RDNet">
+  <img src="./resources/images/rdnet_reloaded.gif" alt="Densenet Reloaded" width="46.5%" height="100%">
+  <img src="./resources/images/densenet_becomes_rdnet.gif" alt="Densenet becomes RDNet" width="51%" height="100%">
 </p>
 
 We revitalize **Densely Connected Convolutional Networks (DenseNets)** and reveal their untapped potential to challenge the prevalent dominance of ResNet-style architectures. Our research indicates that DenseNets were previously underestimated, primarily due to conventional design choices and training methods that underexploited their full capabilities.
