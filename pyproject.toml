@@ -22,7 +22,7 @@ dependencies = [
     "torch>=1.9.1",
     "timm~=0.9"
 ]
-version = "0.1.0"
+version = "0.1.1"
 
 [tool.setuptools.packages.find]
 include = ["rdnet", "rdnet.*"]
