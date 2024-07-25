@@ -116,7 +116,10 @@ class DenseBlock(nn.Module):
         self.gamma = nn.Parameter(ls_init_value * torch.ones(growth_rate)) if ls_init_value > 0 else None
         growth_rate = int(growth_rate)
         inter_chs = int(num_input_features * bottleneck_width_ratio / 8) * 8
-        self.drop_path = DropPath(drop_path_rate)
+
+        if self.drop_path_rate > 0:
+            self.drop_path = DropPath(drop_path_rate)
+
         self.layers = eval(block_type)(
             in_chs=num_input_features,
             inter_chs=inter_chs,
@@ -130,8 +133,10 @@ class DenseBlock(nn.Module):
 
         if self.gamma is not None:
             x = x.mul(self.gamma.reshape(1, -1, 1, 1))
-        return x
 
+        if self.drop_path_rate > 0 and self.training:
+            x = self.drop_path(x)
+        return x
 
 class DenseStage(nn.Sequential):
     def __init__(self, num_block, num_input_features, drop_path_rates, growth_rate, **kwargs):
