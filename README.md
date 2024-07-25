@@ -1,6 +1,6 @@
-<h3> <p align="center"> 🎉🎉 Our paper has been accepted at ECCV 2024! Stay tuned for more updates here !! 🎉🎉</h3>
-
 <div align="center">
+<h3> 🎉🎉 Our paper has been accepted at ECCV 2024! Stay tuned for more updates !! 🎉🎉 </h3>
+
 <h2><a href="https://arxiv.org/abs/2403.19588">DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs</a></h2>
 
 [Donghyun Kim](https://scholar.google.co.kr/citations?hl=en&user=EBC8BMAAAAAJ)<sup>1*</sup>, [Byeongho Heo](https://sites.google.com/view/byeongho-heo/home)<sup>2</sup>, [Dongyoon Han](https://dongyoonhan.github.io/)<sup>2*</sup>
@@ -16,11 +16,10 @@
 <a href="https://huggingface.co/naver-ai" alt="Huggingface">
     <img src="https://img.shields.io/badge/huggingface-NAVERAILab-F58336" /></a>
 </p>
-
-</p>
     
 <p align="center">
-  <img src="./resources/images/rdnet_reloaded.gif" alt="Densenet Reloaded">
+  <img src="./resources/images/rdnet_reloaded.gif" alt="Densenet Reloaded" width="46.5%" height="100%">
+  <img src="./resources/images/densenet_becomes_rdnet.gif" alt="Densenet becomes RDNet" width="51%" height="100%">
 </p>
 
 We revitalize **Densely Connected Convolutional Networks (DenseNets)** and reveal their untapped potential to challenge the prevalent dominance of ResNet-style architectures. Our research indicates that DenseNets were previously underestimated, primarily due to conventional design choices and training methods that underexploited their full capabilities.
@@ -45,8 +44,20 @@ Our work aims to reignite interest in DenseNets by demonstrating their renewed r
 
 *We believe that various architectural designs that have been popular recently would be combined with dense connections successfully.*
 
+## Easy to use
+Install rdnet package with `pip install rdnet` !
+
+```python
+import timm
+import rdnet  # this will register the RDNet models to timm
+
+model = timm.create_model('rdnet_large', pretrained=True)
+```
+
+For detailed usage, please refer to the [huggingface model card](https://huggingface.co/naver-ai/rdnet_tiny.nv_in1k).
 
 ## Updates
+- **(2024.07.24)**: Pip installable pacakge added.
 - **(2024.04.19)**: Initial release of the repository.
 - **(2024.03.28)**: Paper is available on [arXiv](https://arxiv.org/abs/2403.19588).
 
@@ -54,8 +65,6 @@ Our work aims to reignite interest in DenseNets by demonstrating their renewed r
 - [ ] More ImageNet-22k Pretrained Models.
 - [ ] More ImageNet-1k fine-tuned models.
 - [x] Cascade Mask R-CNN with RDNet.
-- [ ] DETR with RDNet.
-- [ ] Self-Supervised Learning with RDNet.
 - [ ] Transfer Learning with RDNet (with cifar10, cifar100, stanford cars, ...).
 
 ## RDNet for Image Classification
