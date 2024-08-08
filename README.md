@@ -47,8 +47,6 @@ Our work aims to reignite interest in DenseNets by demonstrating their renewed r
 ## Easy to use
 RDNet is available on `timm`. You can easily use RDNet by installing the `timm` package.
 
-```bash
-
 ```python
 import timm
 
