@@ -45,11 +45,12 @@ Our work aims to reignite interest in DenseNets by demonstrating their renewed r
 *We believe that various architectural designs that have been popular recently would be combined with dense connections successfully.*
 
 ## Easy to use
-Install rdnet package with `pip install rdnet` !
+RDNet is available on `timm`. You can easily use RDNet by installing the `timm` package.
+
+```bash
 
 ```python
 import timm
-import rdnet  # this will register the RDNet models to timm
 
 model = timm.create_model('rdnet_large', pretrained=True)
 ```
